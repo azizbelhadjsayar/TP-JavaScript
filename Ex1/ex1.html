@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1</title>
+    <link rel="stylesheet" href="ex1.css">
+</head>
+<body>
+    <div class="container">
+        <p id="paragraphe">Le bien c’est ce que je sens bon, le mal est c’est ce que je sens mal.</p>
+        <div class="lesboutons">
+            <button class="bouton" onclick="afficher()">
+                <span class="shadow"></span>
+                <span style="background: aquamarine;" class="edge"></span>
+                <span style="background: rgb(3, 132, 132);" class="front text"> Afficher
+                </span>
+            </button>
+            <button class="bouton" onclick="cacher()">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front text"> Cacher
+                </span>
+            </button>
+        </div>
+        <input type="color" id="palette">
+    </div>
+    <button class="butonaccueil"><a href="../index.html">Accueil</a></button>
+    <script src="ex1.js"></script>
+</body>
+</html>

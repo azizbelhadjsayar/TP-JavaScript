@@ -1,0 +1,116 @@
+* {
+  font-size: 19px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: aliceblue;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-image: url(giphy.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #313134;
+  align-items: center;
+  border-radius: 25px;
+  width: clamp(300px, 75%, 500px);
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-top: 50px;
+}
+
+.button1 {
+  background: #FBCA1F;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 20px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  margin-top: 20px;
+}
+
+.button1:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+.button1:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+#Madame, #Monsieur {
+  margin-top: 12px;
+}
+
+#nom-label , #prenom-label, #titre-label{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: clamp(150px, 75%, 300px);
+}
+
+#nom , #prenom{
+  width: clamp(150px, 75%, 300px);
+  margin-top: 10px;
+}
+
+#langues-parlees {
+  display: grid;
+  width: clamp(150px, 75%, 300px);
+}
+
+input {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  border-radius: 5px;
+}
+
+#langues-parlees > label {
+  margin-top: 12px;
+}
+
+.butonaccueil {
+  --😀: #644dff;
+  --😀😀: #4836bb;
+  --😀😀😀: #654dff63;
+  cursor: pointer;
+  width: 184px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  background: var(--😀);
+  border: 2px solid var(--😀😀);
+  border-radius: .75rem;
+  box-shadow: 0 8px 0 var(--😀😀);
+  transform: skew(-10deg);
+  transition: all .1s ease;
+  filter: drop-shadow(0 15px 20px var(--😀😀😀));
+  margin-top: 20px;
+}
+
+.butonaccueil:active {
+  letter-spacing: 0px;
+  transform: skew(-10deg) translateY(8px);
+  box-shadow: 0 0 0 var(--😀😀😀);
+}
+
+a {
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+}

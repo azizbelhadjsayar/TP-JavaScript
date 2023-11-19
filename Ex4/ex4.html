@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 4</title>
+    <link rel="stylesheet" href="ex4.css">
+    <script src="ex4.js"></script>
+</head>
+<body>
+    <form id="formulaire">
+        <label id="prenom-label">Prénom
+            <input type="text" id="prenom" placeholder="Entrer votre prénom" required>
+        </label>
+        <label id="nom-label">Nom
+            <input type="text" id="nom" placeholder="Entrer votre nom" required>
+        </label>
+        <label id="titre-label">Titre
+            <label for="Madame"><input id="Madame" type="radio" name="account-type" class="inline" /> Mme</label>
+            <label for="Monsieur"><input id="Monsieur" type="radio" name="account-type" class="inline" /> Mr</label>
+        </label>
+        <section  id="langues-parlees">
+            <label>Langues parlées :</label>
+            <label><input id="c1" type="checkbox" value="Espagnol" /> Espagnol</label>
+            <label><input id="c2" type="checkbox" value="Anglais" /> Anglais</label>
+            <label><input id="c3" type="checkbox" value="Allemand" /> Allemand</label>
+            <label><input id="c4" type="checkbox" value="Français" /> Français</label>
+        </section>
+        <button class="button1" type="submit">Valider</button>
+        <button class="butonaccueil"><a href="../index.html">Accueil</a></button>
+    </form>
+
+
+    <script>
+        document.getElementById('formulaire').addEventListener('submit', function(event) {
+            // event.preventDefault();
+            let form = event.target;
+            let message = AnalyseForm(form);
+            alert(message);
+        });
+    </script>
+</body>
+</html>
